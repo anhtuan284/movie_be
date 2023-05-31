@@ -1,4 +1,3 @@
-
 package com.movie.movie_be.controller;
 
 import com.movie.movie_be.dto.Movie;
@@ -24,8 +23,8 @@ public class MovieController {
         movies.add(mv1);
         movies.add(mv2);
         movies.add(mv3);
-        
+
         return ResponseEntity.ok(movies);
     }
-    
+
 }
