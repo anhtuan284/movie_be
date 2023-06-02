@@ -1,12 +1,16 @@
 package com.movie.movie_be.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
-public class Movie {
+@Getter
+@Setter
+public class MovieDTO {
+    private long id;
     private String name;
     private String image;
     private String actor;
+    private int year;
 }
