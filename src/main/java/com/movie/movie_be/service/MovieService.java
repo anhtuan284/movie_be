@@ -8,10 +8,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.ArrayList;
 
+//
 @Service
 public class MovieService {
     @Autowired
-    MovieRepository movieRepository;
+    MovieRepository movieRepository; // singleton once allocated when start
 
     public List<Movie> getMovies() {
         return movieRepository.findAll();

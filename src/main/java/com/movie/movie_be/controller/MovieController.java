@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:5173/"}) //chỉ cho phép các Request từ domain này
+@CrossOrigin(origins = {"http://localhost:5173/"}) //only accept req from this DNS
 public class MovieController {
     @Autowired
     MovieService moviesService;
