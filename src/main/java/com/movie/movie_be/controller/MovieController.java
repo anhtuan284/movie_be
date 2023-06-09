@@ -32,4 +32,8 @@ public class MovieController {
         Movie movie = moviesService.getMovieById(movieId);
         return ResponseEntity.ok(movie);
     }
+    @GetMapping("/set-data") // annotation, zô dường dan nay -> tra ve json
+    public void setData() {
+        moviesService.setData();
+    }
 }
